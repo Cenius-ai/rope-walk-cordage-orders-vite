@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rope Walk Cordage Orders — API service</title>
+    <link rel="icon" href="/static/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/static/landing.css" />
+  </head>
+  <body>
+    <main class="sheet">
+      <p class="eyebrow">FastAPI service · port 8000</p>
+      <h1>Rope Walk Cordage Orders</h1>
+      <p class="lede">
+        The API behind Ellery Ropewalk: cordage orders carrying their full lay and
+        fibre specification, a run list sequenced longest-first, and the hemp and
+        sisal bale ledger.
+      </p>
+
+      <ul class="features">
+        <li>
+          <svg class="hang" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true">
+            <path d="M2 12 L8 2 L14 12" fill="none" stroke="currentColor" stroke-width="1.6" />
+          </svg>
+          <strong>Orders</strong> — fibre, strand count, lay direction, lay length in mm,
+          diameter in mm, finished length in metres.
+        </li>
+        <li>
+          <svg class="hang" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true">
+            <path d="M2 4h12M2 8h9M2 12h12" fill="none" stroke="currentColor" stroke-width="1.6" />
+          </svg>
+          <strong>Ropewalk schedule</strong> — one click rebuilds the run list from
+          confirmed orders, longest finished length first.
+        </li>
+        <li>
+          <svg class="hang" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true">
+            <circle cx="8" cy="8" r="6" fill="none" stroke="currentColor" stroke-width="1.6" />
+            <path d="M4 8h8" fill="none" stroke="currentColor" stroke-width="1.6" />
+          </svg>
+          <strong>Bale stock</strong> — hemp and sisal bales in kilograms with per-fibre totals.
+        </li>
+      </ul>
+
+      <div class="links">
+        <a class="primary" href="http://localhost:5173/">Open the cordage app</a>
+        <a href="/docs">API reference</a>
+        <a href="/health">Health</a>
+      </div>
+
+      <p class="note">
+        Demo ropemaker: <code>cenius@cenius.ai</code> / <code>cenius</code>. The full UI runs on
+        the Vite dev server (port 5173) and proxies <code>/api</code> here.
+      </p>
+    </main>
+  </body>
+</html>
