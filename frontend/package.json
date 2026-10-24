@@ -1,0 +1,29 @@
+{
+  "name": "rope-walk-cordage-frontend",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 5173 --strictPort",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0 --port 5173 --strictPort",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@fontsource/atkinson-hyperlegible": "5.3.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-router-dom": "6.26.2"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "10.4.0",
+    "@testing-library/react": "16.0.1",
+    "@vitejs/plugin-react": "4.7.0",
+    "jsdom": "25.0.1",
+    "vite": "6.4.4",
+    "vitest": "4.1.11"
+  },
+  "overrides": {
+    "@remix-run/router": "1.23.3"
+  }
+}
