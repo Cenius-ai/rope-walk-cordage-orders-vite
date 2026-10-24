@@ -1,0 +1,129 @@
+:root {
+  --background: #f5fbff;
+  --card: #fdffff;
+  --foreground: #0b1418;
+  --muted-foreground: #5a656b;
+  --border: #d9dfe2;
+  --accent: #009494;
+  --primary: #132129;
+  --on-primary: #ffffff;
+  --on-accent: #111111;
+  --ring: #009494;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  display: grid;
+  place-items: center;
+  padding: 32px 16px;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Atkinson Hyperlegible", ui-sans-serif, system-ui, sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.sheet {
+  width: min(100%, 620px);
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 32px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted-foreground);
+}
+
+h1 {
+  margin: 0 0 12px;
+  font-size: clamp(26px, 5vw, 34px);
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
+
+.lede {
+  margin: 0 0 24px;
+  color: var(--muted-foreground);
+}
+
+.features {
+  list-style: none;
+  margin: 0 0 28px;
+  padding: 0 0 0 22px;
+  display: grid;
+  gap: 12px;
+}
+
+.features li {
+  position: relative;
+}
+
+.hang {
+  position: absolute;
+  left: -22px;
+  top: 4px;
+  color: var(--accent);
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 700;
+  padding: 10px 0;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a.primary {
+  background: var(--primary);
+  color: var(--on-primary);
+  border-radius: 6px;
+  padding: 10px 16px;
+}
+
+a.primary:hover {
+  text-decoration: none;
+  background: #1b2f3a;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.note {
+  margin: 24px 0 0;
+  font-size: 13px;
+  color: var(--muted-foreground);
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 12px;
+  background: #e8eef1;
+  border-radius: 4px;
+  padding: 1px 5px;
+  color: var(--foreground);
+}
