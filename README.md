@@ -31,7 +31,7 @@ See [`INSTALL.md`](INSTALL.md) for full setup and usage instructions.
 
 ## Architecture
 
-Folder layout: `backend/`, `frontend/`. Starting up is just `./install.sh`: it installs what is needed and pre-fills the database so you have data to work with straight away. Built in Vite (95 files). See [`INSTALL.md`](INSTALL.md) for complete setup instructions.
+Folder layout: `backend/`, `frontend/`. Starting up is just `./install.sh`: it installs what is needed and pre-fills the database so you have data to work with straight away. Built in Vite (84 files). See [`INSTALL.md`](INSTALL.md) for complete setup instructions.
 
 ## Features
 
